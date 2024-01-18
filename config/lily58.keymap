@@ -64,7 +64,7 @@
 &kp GRAVE  &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                    &trans       &trans     &trans     &trans     &trans    &trans
 &kp TILDE  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0                    &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
 &trans     &trans        &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-                                 &trans  &trans  &trans  &trans    &trans  &trans       &trans     &trans
+                                 &trans  &trans  &mo 3   &trans    &trans  &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -72,11 +72,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans            &trans               &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans
             >;
         };
     };
