@@ -25,7 +25,7 @@
 &kp TILDE   &kp NUMBER_1  &kp N2  &kp N3    &kp N4    &kp N5                                      &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB     &kp Q         &kp W   &kp E     &kp R     &kp T                                       &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
 &kp ESCAPE  &kp A         &kp S   &kp D     &kp F     &kp G                                       &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL   &kp Z         &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT               &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
+&kp LCTRL   &kp Z         &kp X   &kp C     &kp V     &kp B   &kp LG(H)    &kp LG(L)              &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
                                   &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &mt RIGHT_SHIFT ENTER  &mo 2   &kp BSPC  &kp RGUI
             >;
         };
@@ -40,11 +40,11 @@
 
             label = "Lower";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4                    &kp C_PREVIOUS  &kp C_PP           &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_DN   &kp DELETE
-&kp F1          &kp AMPERSAND  &kp PLUS       &kp MINUS     &kp ASTERISK      &kp CARET                       &trans          &trans             &trans      &trans        &trans         &trans
-&kp GRAVE       &kp EXCL       &kp AT         &kp HASH      &kp DOLLAR        &kp PRCNT                       &kp LPAR        &kp LBRC           &kp LBKT    &trans        &kp BACKSLASH  &kp TILDE
-&mo 4           &trans         &kp LESS_THAN  &kp EQUAL     &kp GREATER_THAN  &trans        &trans    &trans  &kp MINUS       &kp PLUS           &trans      &trans        &kp PIPE       &kp GRAVE
-                                              &trans        &trans            &trans        &trans    &trans  &trans          &kp LA(BACKSPACE)  &trans
+&trans     &trans         &trans         &trans     &trans            &trans                       &kp C_PREVIOUS  &kp C_PP           &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_DN   &kp DELETE
+&kp F1     &kp AMPERSAND  &kp PLUS       &kp MINUS  &kp ASTERISK      &kp CARET                    &trans          &trans             &trans      &trans        &trans         &trans
+&kp GRAVE  &kp EXCL       &kp AT         &kp HASH   &kp DOLLAR        &kp PRCNT                    &kp LPAR        &kp LBRC           &kp LBKT    &trans        &kp BACKSLASH  &kp TILDE
+&mo 4      &trans         &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN  &trans     &trans    &trans  &kp MINUS       &kp PLUS           &trans      &trans        &kp PIPE       &kp GRAVE
+                                         &tog 5     &trans            &trans     &trans    &trans  &trans          &kp LA(BACKSPACE)  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -60,11 +60,11 @@
 
             label = "Raise";
             bindings = <
-&trans     &trans        &trans  &trans  &trans  &trans                    &kp C_PP  &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans  &trans
-&kp GRAVE  &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                    &trans    &trans        &trans        &trans     &trans  &trans
-&kp TILDE  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0                    &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT  &trans  &trans
-&trans     &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans        &trans        &trans     &trans  &trans
-                                 &trans  &trans  &mo 3   &trans    &trans  &trans    &trans        &trans
+&trans     &trans        &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&kp GRAVE  &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                    &trans        &trans        &trans        &trans        &trans        &trans
+&kp TILDE  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0                    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
+&trans     &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans        &trans
+                                 &trans  &trans  &mo 3   &trans    &trans  &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -93,11 +93,11 @@
         Gaming {
             label = "toggle";
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB         &kp Q         &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp ESCAPE      &kp A         &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                                      &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
+&kp TILDE       &kp NUMBER_1  &kp N2  &kp N3    &kp N4    &kp N5                            &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB         &kp Q         &kp W   &kp E     &kp R     &kp T                             &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&kp ESCAPE      &kp A         &kp S   &kp D     &kp F     &kp G                             &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X   &kp C     &kp V     &kp B      &tog 5       &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                                      &kp LALT  &kp LGUI  &kp SPACE  &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
             >;
         };
     };
